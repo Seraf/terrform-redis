@@ -55,6 +55,10 @@ variable "aws_nat_instance_type" {
 	default = "m1.small"
 }
 
+variable "aws_redis_instance_type" {
+	default = "m1.small"
+}
+
 variable "aws_bastion_instance_type" {
 	default = "t2.micro"
 }
@@ -69,4 +73,20 @@ variable "key_name" {
 
 variable "key_public" {
     default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCoDK2UxD3sWX1JVvMsx1GZm1WyzMH5kHAaEZLTc+EKKthuzrRL7eU3s78Dbk/epI6wuMA3PndEdxe8l5sYEWpgxrkkeCwI4dp6l1HELzfMGZCScpAHB/o1nEPGZhMSt6urMWCXsztzkMwR4BUetog8n8ss+qsYh8M70QSy007P2x3Lcyc+n44BFibLUssD2z8B9NwKp9AYlNKjfDkX7X9IWAig9MDvrAO7gW4b0PfB9EopHjMqSh267jS8S17R9TQirFqp2EkR9ultfoCzDFOZVhdetKJwnknF/srOcgpQKGgp/Bsu4iKE54hD2eY4AhoAKnD6M/++48mgq500svap seraf@tagada-laptopwork"
+}
+
+variable "redis_port" {
+	default = "6379"
+}
+
+variable "redis_sentinel_port" {
+	default = "26379"
+}
+
+variable "ssh_port" {
+	default = "22"
+}
+
+variable "redis_server_count" {
+	default = "3"
 }
